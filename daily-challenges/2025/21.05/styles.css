@@ -1,0 +1,64 @@
+/* 
+<div class="flag-grid-gaps">
+  <div class="red h1l"></div>
+  <div class="red h1r"></div>
+  <div class="red h2"></div>
+  <div class="red h3l"></div>
+  <div class="red h3r"></div>
+  <div class="red v"></div>
+</div>
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.flag-grid-gaps {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background: #eddf5a;
+    grid-template-rows: 0.5fr 1.2fr 1.2fr 1.2fr 0.5fr;
+    grid-template-columns: 1fr 1fr 0.7fr 1fr 1fr;
+    gap: 35px;
+}
+
+.h1l {
+    grid-row: 2;
+    grid-column: 1 / 3;
+}
+.h1r {
+    grid-row: 2;
+    grid-column: 4 / 6;
+}
+
+.h2 {
+    grid-row: 3;
+    grid-column: 1 / 6;
+}
+
+.h3l {
+    grid-row: 4;
+    grid-column: 1 / 3;
+}
+.h3r {
+    grid-row: 4;
+    grid-column: 4 / 6;
+}
+
+.v {
+    grid-row: 2 / 5;
+    grid-column: 3 / 4;
+}
+
+.red {
+    background: #c53025;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+https://cssbattle.dev/play/DBzBme8qh4CaDBy9PrBC
+
+(95.4% match)
+*/
